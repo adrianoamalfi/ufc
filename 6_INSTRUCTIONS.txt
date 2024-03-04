@@ -1,0 +1,37 @@
+Instructions for Running the UFC Database Application
+
+Prerequisites:
+- Ensure Python is installed on your computer.
+- Ensure `pandas` and `sqlite3` libraries are installed in Python. If not, you can install them using pip:
+  - Open your command line or terminal and run: `pip install pandas sqlite3`.
+- Ensure you have the raw dataset files `raw_fighter_details.csv` and `raw_total_fight_data.csv`.
+
+Step 1: Setting up the Database
+- Open your terminal or command line.
+- Navigate to the directory where the Python script is located.
+- Run the script once to create the database and load the data:
+  - Type `python 4_load_data.py` and press Enter.
+
+Step 2: Using the Query Interface
+- Run the script to Query Database:
+  - Type `python 5_query_interface.py` and press Enter.
+- You will see a menu with different options:
+  Choose an option:
+  1. Show top 10 fighters with the most fights
+  2. Show average significant strike percentages by corner color
+  3. Show top 10 fighters with the most wins
+  4. Show top 10 fight types by average last round duration
+  5. Exit
+- Enter the number of the option you wish to select and press Enter.
+  - For example, enter `1` to see the top 10 fighters with the most fights.
+- After selecting an option, the results will be displayed on the screen.
+- To choose another option, simply wait until the current results are displayed and then enter another number.
+- To exit the application, type `5` and press Enter.
+
+Step 3: Viewing the Database (Optional)
+- If you want to view or query the database outside of the Python application, you can use a SQLite database viewer.
+- Open the `ufc.db` file using your database viewer to view, query, or modify the data.
+
+Notes:
+- Ensure that the file paths in the script for the raw CSV datasets (`raw_fighter_details.csv` and `raw_total_fight_data.csv`) are correct.
+- If you modify the script or the database schema, you may need to delete the existing `ufc.db` file (or equivalent) and rerun the script to regenerate the database.
