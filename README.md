@@ -101,11 +101,47 @@ erDiagram
     Fight ||--o{ PerformanceMetrics : "is_recorded_in"
     Fighter ||--o{ PerformanceMetrics : "has_performance_metrics"
 
+```
+### PNG Format
+[ERD PNG](ERD.png)
+
+### DEMO 
+
+```bash
+python .\5_query_interface.py
+
+Choose an option:
+1. Show top 10 fighters with the most fights
+2. Show average significant strike percentages by corner color
+3. Show top 10 fighters with the most wins
+4. Show top 10 fight types by average last round duration
+5. Exit
+Enter your choice (1-5): 1
+
+Top 10 fighters with the most fights:
+       Fighter_Name  Total_Fights
+0        Jim Miller            36
+1    Donald Cerrone            36
+2   Andrei Arlovski            34
+3   Jeremy Stephens            33
+4     Diego Sanchez            32
+5       Demian Maia            32
+6  Rafael Dos Anjos            30
+7        Clay Guida            30
+8   Michael Bisping            29
+9     Gleison Tibau            28
+
+Choose an option:
+1. Show top 10 fighters with the most fights
+2. Show average significant strike percentages by corner color
+3. Show top 10 fighters with the most wins
+4. Show top 10 fight types by average last round duration
+5. Exit
+Enter your choice (1-5): 5
+Exiting program.
 
 ```
 
-### PNG Format
-[ERD PNG](ERD.png)
 
 ## Contributing
 Contributions to the UFC Database Application are welcome! Please ensure that your pull requests provide a clear description of what they add or fix.
